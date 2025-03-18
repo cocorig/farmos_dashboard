@@ -1,0 +1,21 @@
+.header {
+  background-color: var(--white);
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  min-height: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  z-index: 10;
+}
+
+.headerBox {
+  position: relative;
+  max-width: 90rem;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}

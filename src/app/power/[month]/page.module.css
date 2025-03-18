@@ -1,0 +1,5 @@
+.engSection {
+  width: 100%;
+  min-height: calc(100dvh - 64px);
+  overflow: auto;
+}

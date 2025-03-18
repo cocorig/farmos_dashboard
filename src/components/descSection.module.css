@@ -1,0 +1,14 @@
+.descBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.title {
+  letter-spacing: -0.025em;
+  line-height: 2.375rem;
+}
+.desc {
+  color: var(--darkgray);
+}

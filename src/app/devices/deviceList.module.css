@@ -1,0 +1,15 @@
+.listSection {
+  position: relative;
+}
+.list {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  min-width: 800px;
+}
+.paginationBox {
+  position: absolute;
+  right: 4px;
+  top: -40px;
+}

@@ -1,0 +1,51 @@
+.tableBox {
+  border: 1px solid var(--blue);
+  border-radius: var(--radius-md);
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: start;
+  vertical-align: top;
+  line-height: 1.25rem;
+  font-size: var(--font-size-md);
+}
+.thead {
+  background-color: var(--darkblue);
+}
+.th {
+  font-weight: var(--weight-bold);
+  color: var(--white);
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--blue);
+}
+.tbody {
+  background-color: var(--white);
+}
+.tr {
+}
+.tbody .tr:not(:last-of-type) {
+  border-bottom: 1px solid var(--blue);
+}
+.td {
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  transition: background-color 0.2s;
+}
+
+.activeTd:not([aria-disabled="true"]) {
+  cursor: pointer;
+}
+
+.activeTd:not([aria-disabled="true"]):hover {
+  background-color: var(--lightgray);
+}
+
+.activeTd[aria-disabled="true"] {
+  color: var(--gray);
+  cursor: not-allowed;
+  background-color: transparent;
+  pointer-events: none;
+}

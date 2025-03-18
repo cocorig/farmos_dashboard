@@ -1,0 +1,36 @@
+.box {
+  display: inline-flex;
+  isolation: isolate;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  font-weight: var(--weight-semibold);
+  flex-shrink: 0;
+  min-width: 2rem;
+  height: 2rem;
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+}
+.btn:not(:disabled):hover {
+  background-color: var(--lightgray);
+}
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page {
+  font-weight: var(--weight-semibold);
+}
+.leftBtn {
+  transform: rotate(180deg);
+}
