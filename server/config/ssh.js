@@ -16,8 +16,8 @@ export function connectSSH() {
     ssh
       .on("ready", () => {
         ssh.forwardOut(
-          process.env.DB_HOST,
-          0,
+          process.env.REMOTE_HOST,
+          process.env.REMOTE_PORT,
           process.env.REMOTE_HOST,
           process.env.REMOTE_MYSQL_PORT,
           (err, stream) => {
@@ -30,6 +30,7 @@ export function connectSSH() {
           }
         );
       })
+
       .on("error", (err) => {
         reject("SSH 연결 실패: " + err);
       })
